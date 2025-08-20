@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Company Tools Suite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Static Tool Suite 🛠️</h1>
+
+  <!-- Tool 1: Company Name Cleaner -->
+  <div class="tool">
+    <h2>Company Name Cleaner</h2>
+    <label>Paste company names (one per line):</label>
+    <textarea id="input"></textarea>
+    <div class="buttons">
+      <button id="cleanBtn">Clean Names</button>
+      <button id="copyBtn">Copy Results</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+    <label>Results:</label>
+    <textarea id="output" readonly></textarea>
+  </div>
+
+ <div class="tool" id="tool2">
+  <h2>DNC Company tool</h2>
+  <div class="input-area">
+    <textarea id="acquiredList" placeholder="Paste acquired companies list (List 1)..."></textarea>
+    <textarea id="newList" placeholder="Paste new companies list (List 2)..."></textarea>
+  </div>
+  <div class="button-group">
+    <button id="compareBtn">Compare</button>
+    <button id="resetCompareBtn">Reset</button>
+    <button id="copyCompareBtn">Copy Results</button>
+  </div>
+  
+  <!-- Scrollable results only -->
+  <div id="compareOutputDisplay" class="results-box"></div>
+  <button id="scrollTopBtn" style="display:none;">⬆ Scroll to Top</button>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
